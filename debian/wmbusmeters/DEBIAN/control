@@ -1,0 +1,14 @@
+Package: wmbusmeters
+Version: 1.10.0
+Architecture: amd64
+Maintainer: Fredrik Öhrström <oehrstroem@gmail.com>
+Installed-Size: 3269
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libncurses6 (>= 6), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 11), libtinfo6 (>= 6)
+Section: kernel
+Priority: optional
+Homepage: https://github.com/weetmuts/wmbusmeters
+Description: read wireless and wired M-BUS telegrams from utility meters
+ Receives and decodes C1,T1 or S1 telegrams (using
+ the wireless or wired mbus protocol) to acquire utility meter
+ readings. The readings can then be published using MQTT,
+ curled to a REST api, inserted into a database or stored in a log file.

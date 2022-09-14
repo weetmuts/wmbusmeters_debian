@@ -1,0 +1,8 @@
+/var/log/wmbusmeters/*.log {
+    rotate 12
+    weekly
+    compress
+    missingok
+    postrotate
+        /bin/kill -HUP `cat /run/wmbusmeters/wmbusmeters.pid 2> /dev/null` 2> /dev/null || true
+    endscript

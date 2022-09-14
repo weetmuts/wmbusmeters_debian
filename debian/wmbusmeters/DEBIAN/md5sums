@@ -1,0 +1,6 @@
+85c7f5de6ba8c6af36b2f252413f30ac  lib/systemd/system/wmbusmeters.service
+8a0ee4656f3a232c2aaff5f00e1394b5  usr/bin/wmbusmeters
+56cae1ab7e5075ed6b65c8e104a81afa  usr/bin/wmbusmeters-admin
+dd8a618a0071868e4e3054e10c4a2187  usr/share/doc/wmbusmeters/changelog.gz
+ddc65885af801b737dd0bdd6361a706a  usr/share/doc/wmbusmeters/copyright
+635b61ffd8ac5eb8e19f4a748f8ebd47  usr/share/man/man1/wmbusmeters.1.gz
