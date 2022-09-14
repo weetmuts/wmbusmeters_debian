@@ -1,0 +1,18 @@
+name: Build Ubuntu
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - id: INSTALL_ADDITIONAL_BUILD_DEPENDENCIES
+      run: sudo apt-get install librtlsdr-dev libusb-dev ncurses-dev
+    - id: CONFIGURE
+      run: ./configure
+    - id: MAKE
+      run: make
+    - id: TEST
+      run: make test
